@@ -166,7 +166,7 @@ Finally, JEPA most closely respects the prior art on optimal control / model pre
 
 Note also the family resemblance to the TD-MPC lineage (§2.5): both are decoder-free latent dynamics models used with MPC-style planners — TD-MPC grounds its latent with value/reward prediction, JEPA with self-supervised embedding prediction.
 
-> [!TIP]
+> [!NOTE]
 >  §4 dedicates special attention to ongoing debates about the tradeoffs in approaches described in §2.2, §2.3, and §2.4
 
 ### 2.5 Decoder-free latent + MPC: the TD-MPC lineage **(Type II · MPC: online planning for continuous control)**
