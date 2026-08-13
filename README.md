@@ -120,7 +120,7 @@ As briefed in §1.2, this lineage begins with Ha & Schmidhuber's 2018 paper intr
   - Outputs a probability distribution of the next latent vector $z_{t+1}$ given history $h_t$.
   - Models $P(z_{t+1}|z_t, a_t)$ as a mixture of K Gaussian distributions: $\sum_{i=1}^{K} \pi_i(h_t)\,\mathcal{N}(\mu_i(h_t), \sigma_i(h_t))$.
   - Combines an RNN hidden state update $h_t = \tanh(W_h h_{t-1} + W_z z_t + W_a a_t)$.
-* Controller (C): A simple linear model that maps the current vision state $z_t$ and memory state $h_t$ directly to a motor action $a_t$ and services as the agent's motor cortex, deliberately kept small so that the credit assignment problem is isolated to action selection rather than representation learning.
+* Controller (C): A simple linear model that maps the current vision state $z_t$ and memory state $h_t$ directly to a motor action $a_t$ and serves as the agent's motor cortex, deliberately kept small so that the credit assignment problem is isolated to action selection rather than representation learning.
   - Computes action $a_t = W_c[z_t, h_t] + b_c$.
   - Optimizes weights $W_c$ to maximize expected cumulative reward $R = \sum r_t$ using a Covariance Matrix Adaptation Evolution Strategy (CMA-ES) optimization algorithm.
 
