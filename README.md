@@ -1,7 +1,7 @@
 # World Model Architectures: A Survey (2018–2026)
 
 Author: Nathan Murthy (assisted with Claude, Gemini)
-Last Edit: 9 Aug 2026
+Last Edit: 12 Aug 2026
 
 Many recent surveys already exist covering the massively expansive literature base on *world models* [35, 136, 178]. This survey relies on the author's own familiarity of the subject matter and starts with ([§1](#1-definition)) their own  definition, ([§2](#2-architecture-families)) an exploration of model families and common lineages according to known research domains, ([§3](#3-applied-research)) a short exposition of applied research directions relevant to the author’s experience, and ([§4](#4-open-problems-and-outlook)) some open problems in the research field worth actively monitoring and addressing.
 
@@ -110,20 +110,28 @@ Engines, turbines, reactors, and industrial processes are modeled by a family th
 
 ### 2.2 VAE / generative latent: the Dreamer lineage **(Type II · MBRL: imagination-based policy learning)**
 
-As briefed in §1.2, this lineage begins with Ha & Schmidhuber's 2018 paper introducing the **Variational Autoencoder (VAE)** [55]. VAE is a generative artificial neural network architecture that learns probabilistic data distributions. Most of the applied research examines training a model from image/video feeds, where state is represented with pixels, to navigate an agent in that pixel space (e.g. VAE agents playing video games like Atari and Minecraft). The core architecture of VAE is composed of
+As briefed in §1.2, this lineage begins with Ha & Schmidhuber's 2018 paper introducing an unsupervised learning framework where an agent trains inside a learned internal "dream" representation of its environment before acting in the real world [55]. Most of the applied research examines training a model from image/video feeds, where state is represented with pixels, to navigate an agent in that pixel space (e.g. agents playing video games like Atari and Minecraft). The core architecture they describe is composed o three distinct, modular components trained separately or sequentially.
 
-* An encoder that maps input data to a probability distribution (a mean vector μ and variance vector σ) instead of a fixed point;
-* A decoder that reconstructs or generates new data by taking samples from that latent distribution;
-* Latent space compression for continuous, structured data for similar points that sit close together
+* Vision (VAE): This variational autoencoder (VAE) module compresses high-dimensional sensory inputs (e.g., 64x64x3 video frames) into a compact, low-dimensional latent vector $z_t$ and acts as the agent's visual cortex, abstracting away pixel-level noise to capture essential spatial features.
+* Memory (MDN-RNN): A recurrent neural network (RNN) with a mixture density network (MDN) predicts the probability distribution of the next latent state $z_{t+1}$ based on current latent code $z_t$ and action $a_t$ and acts as the agent's predictive "dream" engine, keeping a historical context $h_t$ and anticipating what will happen next.
+* Controller (C): A simple linear model that maps the current vision state $z_t$ and memory state $h_t$ directly to a motor action $a_t$ and services as the agent's motor cortex, deliberately kept small so that the credit assignment problem is isolated to action selection rather than representation learning.
 
-with some key mathematical mechanics:
+Each module relies on specific mathematical formulations to process information and update weights:
 
-* Reparameterization Trick: Separates the random sampling step from the network parameters. It defines the latent variable as $z = \mu + \sigma \odot ε$ (where ε is random noise), making random sampling differentiable, allowing gradient descent to flow through the network.
-* Reconstruction Loss: Measures how well the decoder rebuilds the original input data (e.g., using mean squared error or binary cross-entropy).
-* Kullback-Leibler (KL) Divergence: Acts as a regularizer that forces the learned latent distributions to stay close to a standard normal distribution, preventing gaps or overlaps in the latent space.
-* Evidence Lower Bound (ELBO): The total loss function optimized during training, balancing accurate data reconstruction against the KL divergence penalty. The ELOB combines reconstruction and regularization.
+- **Variational Autoencoder (V-AE):**
+  - Reconstructs image frame $x_t$ into $\hat{x}_t$ using latent code $z_t$.
+  - Maximizes the Evidence Lower Bound (ELBO): $\mathbb{E}_{q_\phi(z_t|x_t)}[\log p_\psi(x_t|z_t)] - D_{\mathrm{KL}}(q_\phi(z_t|x_t) \,\|\, p(z_t))$. The Kullback-Leibler (KL) Divergence term $D_{\mathrm{KL}}$ behaves as a regularizer that forces the learned latent distributions to stay close to a standard normal distribution, preventing gaps or overlaps in the latent space.
+  - Converts pixels into a compact vector $z_t \in \mathbb{R}^z$.
+- **Mixture Density Recurrent Network (MDN-RNN):**
+  - Outputs a probability distribution of the next latent vector $z_{t+1}$ given history $h_t$.
+  - Models $P(z_{t+1}|z_t, a_t)$ as a mixture of K Gaussian distributions: $\sum_{i=1}^{K} \pi_i(h_t)\,\mathcal{N}(\mu_i(h_t), \sigma_i(h_t))$.
+  - Combines an RNN hidden state update $h_t = \tanh(W_h h_{t-1} + W_z z_t + W_a a_t)$.
+- **Controller (C):**
+  - Computes action $a_t = W_c[z_t, h_t] + b_c$.
+  - Optimizes weights $W_c$ to maximize expected cumulative reward $R = \sum r_t$ using a Covariance Matrix Adaptation Evolution Strategy (CMA-ES) optimization algorithm.
 
-The VAE method was later advanced by research primarily from Danijar Hafner and Timothy Lillicrap while at Google Brain / DeepMind who proved the Recurrent State-Space Model (RSSM), a sequential VAE that reconstructs observations from a learned latent. 
+
+Ha and Schmidhuber's "World Model" architecture above was later advanced by research primarily from Danijar Hafner and Timothy Lillicrap while at Google Brain / DeepMind who proved the Recurrent State-Space Model (RSSM), a sequential VAE that reconstructs observations from a learned latent. 
 
 * The **PlaNet** (2019) paper [57] first introduced the RSSM, the core internal dynamics backbone what would be a popular MBRL family. The PlaNet RSSM proposes a Gated Recurrent Unit (GRU) path $h_t$, paired with a stochastic latent $z_t$, trained as a sequential VAE with reconstruction plus KL, so the model can predict forward in latent space without decoding pixels. Control is done through online planning: cross-entropy-method (CEM) search over action sequences at every step, re-planned constantly, which works but is expensive at decision time, and CEM can't reuse anything it learned about how to act. Every step starts from scratch. PlaNet also introduced latent overshooting (multi-step consistency training), which later versions quietly dropped.
 * **Dreamer V1** (2020) [56] has the same RSSM and loss function as PlaNet but replaces the online planner with a learned policy trained in imagination. Instead of searching at decision time, Dreamer V1 trains an actor and critic entirely on imagined latent rollouts, backpropagating analytic value gradients through the learned dynamics (possible because the latent is reparameterized). Decision time collapses from a CEM search to a single forward pass, and long-horizon credit assignment improves because gradients flow through multi-step imagined futures. 
