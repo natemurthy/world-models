@@ -110,26 +110,25 @@ Engines, turbines, reactors, and industrial processes are modeled by a family th
 
 ### 2.2 VAE / generative latent: the Dreamer lineage **(Type II · MBRL: imagination-based policy learning)**
 
-As briefed in §1.2, this lineage begins with Ha & Schmidhuber's 2018 paper introducing an unsupervised learning framework where an agent trains inside a learned internal "dream" representation of its environment before acting in the real world [55]. Most of the applied research examines training a model from image/video feeds, where state is represented with pixels, to navigate an agent in that pixel space (e.g. agents playing video games like Atari and Minecraft). The core architecture they describe is composed o three distinct, modular components trained separately or sequentially.
+As briefed in §1.2, this lineage begins with Ha & Schmidhuber's 2018 paper introducing an unsupervised learning framework where an agent trains inside a learned internal "dream" representation of its environment before acting in the real world [55]. Most of the applied research examines training a model from image/video feeds, where state is represented with pixels, to navigate an agent in that pixel space (e.g. agents playing video games like Atari and Minecraft). The core architecture they describe is composed of three distinct, modular components trained separately or sequentially where each module relies on specific mathematical formulations to process information and update weights:
 
 * Vision (VAE): This variational autoencoder (VAE) module compresses high-dimensional sensory inputs (e.g., 64x64x3 video frames) into a compact, low-dimensional latent vector $z_t$ and acts as the agent's visual cortex, abstracting away pixel-level noise to capture essential spatial features.
-* Memory (MDN-RNN): A recurrent neural network (RNN) with a mixture density network (MDN) predicts the probability distribution of the next latent state $z_{t+1}$ based on current latent code $z_t$ and action $a_t$ and acts as the agent's predictive "dream" engine, keeping a historical context $h_t$ and anticipating what will happen next.
-* Controller (C): A simple linear model that maps the current vision state $z_t$ and memory state $h_t$ directly to a motor action $a_t$ and services as the agent's motor cortex, deliberately kept small so that the credit assignment problem is isolated to action selection rather than representation learning.
-
-Each module relies on specific mathematical formulations to process information and update weights:
-
-- **Variational Autoencoder (V-AE):**
   - Reconstructs image frame $x_t$ into $\hat{x}_t$ using latent code $z_t$.
-  - Maximizes the Evidence Lower Bound (ELBO): $\mathbb{E}_{q_\phi(z_t|x_t)}[\log p_\psi(x_t|z_t)] - D_{\mathrm{KL}}(q_\phi(z_t|x_t) \,\|\, p(z_t))$. The Kullback-Leibler (KL) Divergence term $D_{\mathrm{KL}}$ behaves as a regularizer that forces the learned latent distributions to stay close to a standard normal distribution, preventing gaps or overlaps in the latent space.
+  - Maximizes the Evidence Lower Bound (ELBO): $\mathbb E_{q_\phi(z_t|x_t)}[\log p_\psi(x_t|z_t)] - D_{\mathrm{KL}}(q_\phi(z_t|x_t) \,\|\, p(z_t))$. The Kullback-Leibler (KL) Divergence term $D_{\mathrm{KL}}$ behaves as a regularizer that forces the learned latent distributions to stay close to a standard normal distribution, preventing gaps or overlaps in the latent space.
   - Converts pixels into a compact vector $z_t \in \mathbb{R}^z$.
-- **Mixture Density Recurrent Network (MDN-RNN):**
+* Memory (MDN-RNN): A recurrent neural network (RNN) with a mixture density network (MDN) predicts the probability distribution of the next latent state $z_{t+1}$ based on current latent code $z_t$ and action $a_t$ and acts as the agent's predictive "dream" engine, keeping a historical context $h_t$ and anticipating what will happen next.
   - Outputs a probability distribution of the next latent vector $z_{t+1}$ given history $h_t$.
   - Models $P(z_{t+1}|z_t, a_t)$ as a mixture of K Gaussian distributions: $\sum_{i=1}^{K} \pi_i(h_t)\,\mathcal{N}(\mu_i(h_t), \sigma_i(h_t))$.
   - Combines an RNN hidden state update $h_t = \tanh(W_h h_{t-1} + W_z z_t + W_a a_t)$.
-- **Controller (C):**
+* Controller (C): A simple linear model that maps the current vision state $z_t$ and memory state $h_t$ directly to a motor action $a_t$ and services as the agent's motor cortex, deliberately kept small so that the credit assignment problem is isolated to action selection rather than representation learning.
   - Computes action $a_t = W_c[z_t, h_t] + b_c$.
   - Optimizes weights $W_c$ to maximize expected cumulative reward $R = \sum r_t$ using a Covariance Matrix Adaptation Evolution Strategy (CMA-ES) optimization algorithm.
 
+Some of the key innovations and findings of this technique include
+
+* Unsupervised Representation Learning: The spatial and temporal environment models are learned quickly without relying on external task rewards;
+* Training in “Dreams": The controller can be trained completely inside a simulated "dream" environment generated entirely by the internal world model, and this policy can then be transferred back to successfully solve tasks in the actual environment;
+* Data Efficiency: By utilizing internal mental simulations for planning and learning, the system bypasses the need for intensive real-world agent interaction during policy optimization.
 
 Ha and Schmidhuber's "World Model" architecture above was later advanced by research primarily from Danijar Hafner and Timothy Lillicrap while at Google Brain / DeepMind who proved the Recurrent State-Space Model (RSSM), a sequential VAE that reconstructs observations from a learned latent. 
 
