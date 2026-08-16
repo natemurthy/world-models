@@ -169,12 +169,14 @@
   <g stroke="#4338ca" stroke-width="1.6" fill="none">
     <line x1="475" y1="1911" x2="819" y2="1911"/><line x1="819" y1="1911" x2="1027" y2="1911"/>
     <line x1="819" y1="1911" x2="879" y2="1947"/><line x1="879" y1="1947" x2="949" y2="1947"/>
+    <line x1="819" y1="1911" x2="995" y2="1929"/>
     <line x1="819" y1="1911" x2="859" y2="1983"/><line x1="859" y1="1983" x2="949" y2="1983"/><line x1="949" y1="1983" x2="1069" y2="1983"/>
     <line x1="655" y1="2019" x2="931" y2="2019"/>
     <line x1="829" y1="2051" x2="1069" y2="2051"/>
   </g>
   <g fill="#4338ca">
     <circle cx="475" cy="1911" r="4.5"/><circle cx="819" cy="1911" r="4.5"/><circle cx="1027" cy="1911" r="4.5"/>
+    <circle cx="995" cy="1929" r="4.5"/><circle cx="910" cy="2067" r="4.5"/>
     <circle cx="879" cy="1947" r="4.5"/><circle cx="949" cy="1947" r="4.5"/>
     <circle cx="859" cy="1983" r="4.5"/><circle cx="949" cy="1983" r="4.5"/><circle cx="1069" cy="1983" r="4.5"/>
     <circle cx="655" cy="2019" r="4.5"/><circle cx="931" cy="2019" r="4.5"/>
@@ -185,6 +187,7 @@
     <text x="475" y="1901">DeepMind AlphaFold2</text>
     <text x="811" y="1901" text-anchor="end">DeepMind AlphaFold3</text>
     <text x="1027" y="1901">Isomorphic IsoDDE</text>
+    <text x="995" y="1921" text-anchor="end" dx="-8">OpenFold3 (open)</text>
     <text x="879" y="1963">MIT Boltz-1</text>
     <text x="957" y="1941" text-anchor="start">MIT / Recursion Boltz-2</text>
     <text x="851" y="1987" text-anchor="end">Chai-1 (open)</text>
@@ -195,6 +198,7 @@
     <text x="719" y="2071">Generate:Bio Chroma</text>
     <text x="829" y="2041">EvolutionaryScale ESM3</text>
     <text x="1069" y="2041">CZ Biohub ESMFold2 / ESM C</text>
+    <text x="910" y="2081">Arc / NVIDIA Evo 2</text>
     <text x="799" y="2101">Recursion Phenom</text>
     <text x="1039" y="2101">Xaira X-Cell</text>
   </g>
@@ -362,11 +366,13 @@
     <line x1="799" y1="1098" x2="997" y2="1098"/>
     <line x1="967" y1="1062" x2="997" y2="1098"/>
     <line x1="859" y1="1214" x2="997" y2="1214"/>
+    <line x1="940" y1="1144" x2="1050" y2="1180"/>
   </g>
   <g fill="#db2777">
     <circle cx="787" cy="1062" r="4.5"/><circle cx="889" cy="1062" r="4.5"/><circle cx="967" cy="1062" r="4.5"/><circle cx="1027" cy="1062" r="4.5"/>
     <circle cx="799" cy="1098" r="4.5"/><circle cx="997" cy="1098" r="4.5"/>
     <circle cx="787" cy="1144" r="4.5"/><circle cx="847" cy="1144" r="4.5"/><circle cx="997" cy="1144" r="4.5"/>
+    <circle cx="940" cy="1144" r="4.5"/><circle cx="1050" cy="1180" r="4.5"/>
     <circle cx="817" cy="1180" r="4.5"/><circle cx="901" cy="1180" r="4.5"/>
     <circle cx="859" cy="1214" r="4.5"/><circle cx="997" cy="1214" r="4.5"/>
   </g>
@@ -380,6 +386,8 @@
     <text x="700" y="1135" text-anchor="start">OpenAI Sora (“world simulator”)</text>
     <text x="847" y="1160">Google GameNGen</text>
     <text x="1005" y="1135" text-anchor="start">MBZUAI PAN / GLP</text>
+    <text x="940" y="1135">ByteDance BAGEL</text>
+    <text x="1045" y="1198">Physical Intelligence π0.7</text>
     <text x="817" y="1196">U. Geneva DIAMOND</text>
     <text x="909" y="1184" text-anchor="start">NVIDIA Cosmos</text>
     <text x="540" y="1218" text-anchor="start" font-style="italic" fill="#db2777">spatial / 3D-native (persistent geometry):</text>
