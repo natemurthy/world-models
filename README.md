@@ -1,7 +1,7 @@
 # World Model Architectures: A Survey (2018–2026)
 
 Author: Nathan Murthy (assisted with Claude, Gemini)
-Last Edit: 20 Aug 2026
+Last Edit: 4 Sep 2026
 
 Many recent surveys already exist covering the massively expansive literature base on *world models* [44, 45, 162, 163, 212]. This survey relies on the author's own familiarity of the subject matter and starts with ([§1](#1-definition)) their own  definition, ([§2](#2-architecture-families)) an exploration of model families and common lineages according to known research domains, ([§3](#3-applied-research)) a short exposition of applied research directions relevant to the author’s experience, and ([§4](#4-open-problems-and-outlook)) some open problems in the research field worth actively monitoring and addressing.
 
