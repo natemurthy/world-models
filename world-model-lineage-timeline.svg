@@ -99,10 +99,9 @@
     <line x1="787" y1="688" x2="907" y2="716"/>
     <line x1="949" y1="688" x2="1069" y2="716"/>
     <line x1="1000" y1="664" x2="1090" y2="688"/>
-    <line x1="949" y1="688" x2="1090" y2="688"/>
   </g>
   <g fill="#16a34a">
-    <circle cx="589" cy="688" r="4.5"/><circle cx="661" cy="688" r="4.5"/><circle cx="787" cy="688" r="4.5"/><circle cx="949" cy="688" r="4.5"/><circle cx="877" cy="716" r="4.5"/><circle cx="907" cy="716" r="4.5"/><circle cx="1069" cy="716" r="4.5"/><circle cx="1000" cy="664" r="4.5"/><circle cx="1090" cy="688" r="4.5"/>
+    <circle cx="589" cy="688" r="4.5"/><circle cx="661" cy="688" r="4.5"/><circle cx="787" cy="688" r="4.5"/><circle cx="949" cy="688" r="4.5"/><circle cx="877" cy="716" r="4.5"/><circle cx="907" cy="716" r="4.5"/><circle cx="1069" cy="716" r="4.5"/><circle cx="1000" cy="664" r="4.5"/><circle cx="1090" cy="688" r="4.5"/><circle cx="1070" cy="664" r="4.5"/>
   </g>
   <g font-size="10.5" fill="#333" text-anchor="middle">
     <text x="589" y="678">LeCun AMI position paper</text>
@@ -113,6 +112,7 @@
     <text x="915" y="732" text-anchor="start">Meta PLDM</text>
     <text x="1069" y="732">UC Berkeley SkyJEPA</text>
     <text x="1000" y="656">LeJEPA (SIGReg)</text>
+    <text x="1080" y="668" text-anchor="start">NYU AdaJEPA</text>
     <text x="1090" y="704">LeVJEPA</text>
   </g>
 
