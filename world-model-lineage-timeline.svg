@@ -122,6 +122,7 @@
     <line x1="799" y1="1290" x2="1023" y2="1307"/><line x1="799" y1="1290" x2="1023" y2="1329"/><line x1="799" y1="1290" x2="1023" y2="1351"/>
     <line x1="880" y1="1390" x2="920" y2="1379"/><line x1="880" y1="1390" x2="920" y2="1401"/>
     <line x1="649" y1="1446" x2="769" y2="1446"/><line x1="769" y1="1446" x2="949" y2="1446"/>
+    <line x1="949" y1="1446" x2="1095" y2="1446"/>
     <line x1="649" y1="1446" x2="829" y2="1479"/><line x1="829" y1="1479" x2="961" y2="1479"/><line x1="961" y1="1479" x2="1057" y2="1479"/>
     <line x1="823" y1="1512" x2="1075" y2="1512"/>
     <line x1="925" y1="1573" x2="969" y2="1573"/>
@@ -130,7 +131,7 @@
     <circle cx="553" cy="1285" r="4.5"/><circle cx="739" cy="1285" r="4.5"/><circle cx="799" cy="1285" r="4.5"/><circle cx="960" cy="1285" r="4.5"/>
     <circle cx="1023" cy="1307" r="4.5"/><circle cx="1023" cy="1329" r="4.5"/>
     <circle cx="880" cy="1390" r="3"/><circle cx="920" cy="1379" r="4.5"/><circle cx="920" cy="1401" r="4.5"/>
-    <circle cx="649" cy="1446" r="4.5"/><circle cx="769" cy="1446" r="4.5"/><circle cx="949" cy="1446" r="4.5"/>
+    <circle cx="649" cy="1446" r="4.5"/><circle cx="769" cy="1446" r="4.5"/><circle cx="949" cy="1446" r="4.5"/><circle cx="1095" cy="1446" r="4.5"/>
     <circle cx="829" cy="1479" r="4.5"/><circle cx="961" cy="1479" r="4.5"/><circle cx="1057" cy="1479" r="4.5"/>
     <circle cx="823" cy="1512" r="4.5"/><circle cx="1075" cy="1512" r="4.5"/>
     <circle cx="805" cy="1540" r="4.5"/>
@@ -149,6 +150,7 @@
     <text x="641" y="1436" text-anchor="end">DeepMind GraphCast</text>
     <text x="769" y="1460">DeepMind GenCast</text>
     <text x="949" y="1436">DeepMind FGN / WeatherNext 2</text>
+    <text x="1095" y="1436">WeatherNext 3</text>
     <text x="821" y="1493" text-anchor="end">ECMWF AIFS</text>
     <text x="961" y="1493">AIFS-ENS operational</text>
     <text x="1057" y="1468">AIFS-ENS v2</text>
@@ -272,7 +274,7 @@
     <circle cx="799" cy="224" r="4.5"/><circle cx="819" cy="224" r="4.5"/><circle cx="949" cy="224" r="4.5"/><circle cx="999" cy="224" r="4.5"/>
     <circle cx="519" cy="260" r="4.5"/><circle cx="919" cy="260" r="4.5"/><circle cx="1039" cy="260" r="4.5"/>
     <circle cx="715" cy="296" r="4.5"/><circle cx="955" cy="296" r="4.5"/><circle cx="1029" cy="296" r="4.5"/>
-    <circle cx="1027" cy="332" r="4.5"/>
+    <circle cx="1027" cy="346" r="4.5"/><circle cx="920" cy="346" r="4.5"/><circle cx="1045" cy="346" r="4.5"/>
     <circle cx="279" cy="368" r="4.5"/><circle cx="361" cy="368" r="4.5"/>
   </g>
   <g font-size="10.5" fill="#333" text-anchor="middle">
@@ -296,15 +298,19 @@
     <text x="715" y="286">PIRNN + Lyapunov MPC</text>
     <text x="955" y="286">constrained NN process dynamics</text>
     <text x="1029" y="312">diffusion world model, real process line</text>
-    <text x="955" y="322">Emerald AI</text>
-    <text x="1027" y="348">Phaidra</text>
-    <text x="1067" y="322" text-anchor="start">GridCARE</text>
+    <text x="955" y="336">Emerald AI</text>
+    <text x="1027" y="362">Phaidra</text>
+    <text x="1077" y="336" text-anchor="start">GridCARE</text>
+    <text x="920" y="362">Pravāh</text>
+    <text x="1045" y="336">ThinkLabs</text>
+    <text x="1090" y="362">Gridsight</text>
     <text x="271" y="358" text-anchor="end">SINDy autoencoder (PNAS ’19)</text>
     <text x="361" y="358">TRS-ODEN (NeurIPS ’20)</text>
   </g>
 
-  <circle cx="955" cy="332" r="4.5" fill="#ffffff" stroke="#0d9488" stroke-width="2"/>
-  <circle cx="1059" cy="332" r="4.5" fill="#ffffff" stroke="#0d9488" stroke-width="2"/>
+  <circle cx="955" cy="346" r="4.5" fill="#ffffff" stroke="#0d9488" stroke-width="2"/>
+  <circle cx="1062" cy="346" r="4.5" fill="#ffffff" stroke="#0d9488" stroke-width="2"/>
+  <circle cx="1090" cy="346" r="4.5" fill="#ffffff" stroke="#0d9488" stroke-width="2"/>
 
   <!-- Band 7: Human / social behavioral -->
   <rect x="15" y="2115" width="1150" height="360" fill="#9333ea" opacity="0.06"/>
@@ -369,7 +375,7 @@
     <line x1="787" y1="1062" x2="889" y2="1062"/><line x1="889" y1="1062" x2="967" y2="1062"/><line x1="967" y1="1062" x2="1027" y2="1062"/>
     <line x1="799" y1="1098" x2="997" y2="1098"/>
     <line x1="967" y1="1062" x2="997" y2="1098"/>
-    <line x1="859" y1="1214" x2="997" y2="1214"/>
+    <line x1="859" y1="1214" x2="997" y2="1214"/><line x1="997" y1="1214" x2="1095" y2="1214"/>
     <line x1="940" y1="1144" x2="1050" y2="1180"/>
   </g>
   <g fill="#db2777">
@@ -378,7 +384,7 @@
     <circle cx="787" cy="1144" r="4.5"/><circle cx="847" cy="1144" r="4.5"/><circle cx="997" cy="1144" r="4.5"/>
     <circle cx="940" cy="1144" r="4.5"/><circle cx="1050" cy="1180" r="4.5"/>
     <circle cx="817" cy="1180" r="4.5"/><circle cx="901" cy="1180" r="4.5"/>
-    <circle cx="859" cy="1214" r="4.5"/><circle cx="997" cy="1214" r="4.5"/>
+    <circle cx="859" cy="1214" r="4.5"/><circle cx="997" cy="1214" r="4.5"/><circle cx="1095" cy="1214" r="4.5"/>
   </g>
   <g font-size="10.5" fill="#333" text-anchor="middle">
     <text x="787" y="1052" text-anchor="end">DeepMind Genie</text>
@@ -396,7 +402,8 @@
     <text x="909" y="1184" text-anchor="start">NVIDIA Cosmos</text>
     <text x="540" y="1218" text-anchor="start" font-style="italic" fill="#db2777">spatial / 3D-native (persistent geometry):</text>
     <text x="851" y="1230" text-anchor="end">World Labs LWM (founded)</text>
-    <text x="1005" y="1230" text-anchor="start">Marble (beta ’25 → GA ’26)</text>
+    <text x="997" y="1230">Marble (’25 → GA ’26)</text>
+    <text x="1095" y="1230">Atlas (Sept ’26)</text>
   </g>
 
   <!-- Band 5: Decoder-free latent + MPC -->
