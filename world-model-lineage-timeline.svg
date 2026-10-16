@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 2531" font-family="Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 2599" font-family="Helvetica, Arial, sans-serif">
   <defs>
     <linearGradient id="vaejepa" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#7c3aed"/>
@@ -9,47 +9,47 @@
       <stop offset="1" stop-color="#7c3aed"/>
     </linearGradient>
   </defs>
-  <rect x="0" y="0" width="1180" height="2531" fill="#ffffff"/>
+  <rect x="0" y="0" width="1180" height="2599" fill="#ffffff"/>
   <text x="590" y="20" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">World Model Architectures: A Survey (2018–2026)</text>
 
   <!-- year gridlines -->
   <g stroke="#d8d8d8" stroke-dasharray="3,4" stroke-width="1">
-    <line x1="55" y1="72" x2="55" y2="2483"/>
-    <line x1="175" y1="72" x2="175" y2="2483"/>
-    <line x1="295" y1="72" x2="295" y2="2483"/>
-    <line x1="415" y1="72" x2="415" y2="2483"/>
-    <line x1="535" y1="72" x2="535" y2="2483"/>
-    <line x1="655" y1="72" x2="655" y2="2483"/>
-    <line x1="775" y1="72" x2="775" y2="2483"/>
-    <line x1="895" y1="72" x2="895" y2="2483"/>
-    <line x1="1015" y1="72" x2="1015" y2="2483"/>
+    <line x1="55" y1="72" x2="55" y2="2551"/>
+    <line x1="175" y1="72" x2="175" y2="2551"/>
+    <line x1="295" y1="72" x2="295" y2="2551"/>
+    <line x1="415" y1="72" x2="415" y2="2551"/>
+    <line x1="535" y1="72" x2="535" y2="2551"/>
+    <line x1="655" y1="72" x2="655" y2="2551"/>
+    <line x1="775" y1="72" x2="775" y2="2551"/>
+    <line x1="895" y1="72" x2="895" y2="2551"/>
+    <line x1="1015" y1="72" x2="1015" y2="2551"/>
   </g>
   <g font-size="12" font-weight="bold" fill="#888" text-anchor="middle">
     <text x="55" y="66">2018</text><text x="175" y="66">2019</text><text x="295" y="66">2020</text><text x="415" y="66">2021</text><text x="535" y="66">2022</text><text x="655" y="66">2023</text><text x="775" y="66">2024</text><text x="895" y="66">2025</text><text x="1015" y="66">2026</text>
-    <text x="55" y="2497">2018</text><text x="175" y="2497">2019</text><text x="295" y="2497">2020</text><text x="415" y="2497">2021</text><text x="535" y="2497">2022</text><text x="655" y="2497">2023</text><text x="775" y="2497">2024</text><text x="895" y="2497">2025</text><text x="1015" y="2497">2026</text>
+    <text x="55" y="2565">2018</text><text x="175" y="2565">2019</text><text x="295" y="2565">2020</text><text x="415" y="2565">2021</text><text x="535" y="2565">2022</text><text x="655" y="2565">2023</text><text x="775" y="2565">2024</text><text x="895" y="2565">2025</text><text x="1015" y="2565">2026</text>
   </g>
 
   <!-- family bands (top to bottom: physics-ML, T-symmetry bridge, VAE, Var-JEPA, JEPA, TD-MPC, MuZero, token, generative video, Earth-system, nuclear, molecular, social) -->
   <rect x="15" y="406" width="1150" height="52" fill="url(#tsym)" opacity="0.08"/>
   <rect x="15" y="464" width="1150" height="122" fill="#7c3aed" opacity="0.05"/>
   <rect x="15" y="592" width="1150" height="40" fill="url(#vaejepa)" opacity="0.08"/>
-  <rect x="15" y="638" width="1150" height="100" fill="#16a34a" opacity="0.05"/>
-  <rect x="15" y="1248" width="1150" height="349" fill="#0f766e" opacity="0.05"/>
-  <rect x="15" y="1014" width="1150" height="228" fill="#db2777" opacity="0.05"/>
-  <rect x="15" y="744" width="1150" height="94" fill="#0284c7" opacity="0.05"/>
-  <rect x="15" y="844" width="1150" height="82" fill="#dc2626" opacity="0.05"/>
-  <rect x="15" y="932" width="1150" height="76" fill="#d97706" opacity="0.05"/>
+  <rect x="15" y="638" width="1150" height="128" fill="#16a34a" opacity="0.05"/>
+  <rect x="15" y="1316" width="1150" height="349" fill="#0f766e" opacity="0.05"/>
+  <rect x="15" y="1042" width="1150" height="268" fill="#db2777" opacity="0.05"/>
+  <rect x="15" y="772" width="1150" height="94" fill="#0284c7" opacity="0.05"/>
+  <rect x="15" y="872" width="1150" height="82" fill="#dc2626" opacity="0.05"/>
+  <rect x="15" y="960" width="1150" height="76" fill="#d97706" opacity="0.05"/>
 
   <!-- band titles -->
   <text x="24" y="422" font-size="11.5" font-weight="bold" fill="#3f6d7f">T-symmetry bridge &#8212; physics prior &#8646; offline MBRL</text>
   <text x="24" y="480" font-size="12.5" font-weight="bold" fill="#7c3aed">VAE / generative latent (Dreamer lineage)</text>
   <text x="24" y="617" font-size="11.5" font-weight="bold" fill="#57736b">Variational JEPA — VAE ⇄ JEPA bridge</text>
   <text x="24" y="654" font-size="12.5" font-weight="bold" fill="#16a34a">JEPA — joint-embedding / latent prediction</text>
-  <text x="24" y="1264" font-size="12.5" font-weight="bold" fill="#0f766e">Earth-system models (action free)</text>
-  <text x="24" y="1030" font-size="12.5" font-weight="bold" fill="#db2777">Generative video / interactive world models</text>
-  <text x="24" y="760" font-size="12.5" font-weight="bold" fill="#0284c7">Decoder-free latent + MPC (TD-MPC lineage)</text>
-  <text x="24" y="860" font-size="12.5" font-weight="bold" fill="#dc2626">Search-based (MuZero lineage)</text>
-  <text x="24" y="948" font-size="12.5" font-weight="bold" fill="#d97706">Token / transformer world models</text>
+  <text x="24" y="1332" font-size="12.5" font-weight="bold" fill="#0f766e">Earth-system models (action free)</text>
+  <text x="24" y="1058" font-size="12.5" font-weight="bold" fill="#db2777">Generative video / interactive world models</text>
+  <text x="24" y="788" font-size="12.5" font-weight="bold" fill="#0284c7">Decoder-free latent + MPC (TD-MPC lineage)</text>
+  <text x="24" y="888" font-size="12.5" font-weight="bold" fill="#dc2626">Search-based (MuZero lineage)</text>
+  <text x="24" y="976" font-size="12.5" font-weight="bold" fill="#d97706">Token / transformer world models</text>
 
 
   <path d="M279,376 L279,388 L702,388 L702,434 L707,440" fill="none" stroke="#0d9488" stroke-width="1.4" stroke-dasharray="4,4"/>
@@ -99,9 +99,11 @@
     <line x1="787" y1="688" x2="907" y2="716"/>
     <line x1="949" y1="688" x2="1069" y2="716"/>
     <line x1="1000" y1="664" x2="1090" y2="688"/>
+    <line x1="1000" y1="664" x2="1115" y2="650"/>
+    <line x1="949" y1="688" x2="1040" y2="744"/>
   </g>
   <g fill="#16a34a">
-    <circle cx="589" cy="688" r="4.5"/><circle cx="661" cy="688" r="4.5"/><circle cx="787" cy="688" r="4.5"/><circle cx="949" cy="688" r="4.5"/><circle cx="877" cy="716" r="4.5"/><circle cx="907" cy="716" r="4.5"/><circle cx="1069" cy="716" r="4.5"/><circle cx="1000" cy="664" r="4.5"/><circle cx="1090" cy="688" r="4.5"/><circle cx="1070" cy="664" r="4.5"/>
+    <circle cx="589" cy="688" r="4.5"/><circle cx="661" cy="688" r="4.5"/><circle cx="787" cy="688" r="4.5"/><circle cx="949" cy="688" r="4.5"/><circle cx="877" cy="716" r="4.5"/><circle cx="907" cy="716" r="4.5"/><circle cx="1069" cy="716" r="4.5"/><circle cx="1000" cy="664" r="4.5"/><circle cx="1090" cy="688" r="4.5"/><circle cx="1070" cy="664" r="4.5"/><circle cx="1115" cy="650" r="4.5"/><circle cx="1040" cy="744" r="4.5"/><circle cx="1105" cy="744" r="4.5"/>
   </g>
   <g font-size="10.5" fill="#333" text-anchor="middle">
     <text x="589" y="678">LeCun AMI position paper</text>
@@ -110,145 +112,153 @@
     <text x="949" y="678">Meta V-JEPA 2 / 2-AC</text>
     <text x="871" y="732" text-anchor="end">NYU DINO-WM</text>
     <text x="915" y="732" text-anchor="start">Meta PLDM</text>
-    <text x="1069" y="732">UC Berkeley SkyJEPA</text>
-    <text x="1000" y="656">LeJEPA (SIGReg)</text>
+    <text x="1077" y="720" text-anchor="start">Berkeley SkyJEPA</text>
+    <text x="1000" y="656" text-anchor="end">LeJEPA (SIGReg)</text>
+    <text x="1121" y="654" text-anchor="start">H-JEPA</text>
+    <text x="1040" y="760">V-JEPA 2.1</text>
+    <text x="1105" y="760">D-JEPA</text>
     <text x="1080" y="668" text-anchor="start">NYU AdaJEPA</text>
     <text x="1090" y="704">LeVJEPA</text>
   </g>
 
   <!-- Band 3: Earth-system -->
   <g stroke="#0f766e" stroke-width="1.6" fill="none">
-    <line x1="553" y1="1285" x2="739" y2="1285"/><line x1="739" y1="1285" x2="799" y2="1285"/><line x1="799" y1="1285" x2="960" y2="1285"/>
-    <line x1="799" y1="1290" x2="1023" y2="1307"/><line x1="799" y1="1290" x2="1023" y2="1329"/><line x1="799" y1="1290" x2="1023" y2="1351"/>
-    <line x1="880" y1="1390" x2="920" y2="1379"/><line x1="880" y1="1390" x2="920" y2="1401"/>
-    <line x1="649" y1="1446" x2="769" y2="1446"/><line x1="769" y1="1446" x2="949" y2="1446"/>
-    <line x1="949" y1="1446" x2="1095" y2="1446"/>
-    <line x1="649" y1="1446" x2="829" y2="1479"/><line x1="829" y1="1479" x2="961" y2="1479"/><line x1="961" y1="1479" x2="1057" y2="1479"/>
-    <line x1="823" y1="1512" x2="1075" y2="1512"/>
-    <line x1="925" y1="1573" x2="969" y2="1573"/>
+    <line x1="553" y1="1353" x2="739" y2="1353"/><line x1="739" y1="1353" x2="799" y2="1353"/><line x1="799" y1="1353" x2="960" y2="1353"/>
+    <line x1="799" y1="1358" x2="1023" y2="1375"/><line x1="799" y1="1358" x2="1023" y2="1397"/><line x1="799" y1="1358" x2="1023" y2="1419"/>
+    <line x1="880" y1="1458" x2="920" y2="1447"/><line x1="880" y1="1458" x2="920" y2="1469"/>
+    <line x1="649" y1="1514" x2="769" y2="1514"/><line x1="769" y1="1514" x2="949" y2="1514"/>
+    <line x1="949" y1="1514" x2="1095" y2="1514"/>
+    <line x1="649" y1="1514" x2="829" y2="1547"/><line x1="829" y1="1547" x2="961" y2="1547"/><line x1="961" y1="1547" x2="1057" y2="1547"/><line x1="1057" y1="1547" x2="1095" y2="1547"/>
+    <line x1="823" y1="1580" x2="1075" y2="1580"/>
+    <line x1="925" y1="1641" x2="969" y2="1641"/>
   </g>
   <g fill="#0f766e">
-    <circle cx="553" cy="1285" r="4.5"/><circle cx="739" cy="1285" r="4.5"/><circle cx="799" cy="1285" r="4.5"/><circle cx="960" cy="1285" r="4.5"/>
-    <circle cx="1023" cy="1307" r="4.5"/><circle cx="1023" cy="1329" r="4.5"/>
-    <circle cx="880" cy="1390" r="3"/><circle cx="920" cy="1379" r="4.5"/><circle cx="920" cy="1401" r="4.5"/>
-    <circle cx="649" cy="1446" r="4.5"/><circle cx="769" cy="1446" r="4.5"/><circle cx="949" cy="1446" r="4.5"/><circle cx="1095" cy="1446" r="4.5"/>
-    <circle cx="829" cy="1479" r="4.5"/><circle cx="961" cy="1479" r="4.5"/><circle cx="1057" cy="1479" r="4.5"/>
-    <circle cx="823" cy="1512" r="4.5"/><circle cx="1075" cy="1512" r="4.5"/>
-    <circle cx="805" cy="1540" r="4.5"/>
-    <circle cx="925" cy="1573" r="4.5"/><circle cx="969" cy="1573" r="4.5"/>
+    <circle cx="553" cy="1353" r="4.5"/><circle cx="739" cy="1353" r="4.5"/><circle cx="799" cy="1353" r="4.5"/><circle cx="960" cy="1353" r="4.5"/>
+    <circle cx="1023" cy="1375" r="4.5"/><circle cx="1023" cy="1397" r="4.5"/>
+    <circle cx="880" cy="1458" r="3"/><circle cx="920" cy="1447" r="4.5"/><circle cx="920" cy="1469" r="4.5"/>
+    <circle cx="649" cy="1514" r="4.5"/><circle cx="769" cy="1514" r="4.5"/><circle cx="949" cy="1514" r="4.5"/><circle cx="1095" cy="1514" r="4.5"/>
+    <circle cx="829" cy="1547" r="4.5"/><circle cx="961" cy="1547" r="4.5"/><circle cx="1057" cy="1547" r="4.5"/><circle cx="1095" cy="1547" r="4.5"/><circle cx="1060" cy="1442" r="4.5"/>
+    <circle cx="823" cy="1580" r="4.5"/><circle cx="1075" cy="1580" r="4.5"/>
+    <circle cx="805" cy="1608" r="4.5"/>
+    <circle cx="925" cy="1641" r="4.5"/><circle cx="969" cy="1641" r="4.5"/>
   </g>
   <g font-size="10.5" fill="#333" text-anchor="middle">
-    <text x="553" y="1275">NVIDIA FourCastNet</text>
-    <text x="739" y="1275">NVIDIA CorrDiff</text>
-    <text x="791" y="1299" text-anchor="end">NVIDIA Earth-2 platform</text>
-    <text x="968" y="1275" text-anchor="start">NVIDIA FourCastNet 3</text>
-    <text x="1031" y="1311" text-anchor="start">Earth-2 Atlas (15-day)</text>
-    <text x="1031" y="1333" text-anchor="start">Earth-2 Stormscope</text>
-    <text x="1031" y="1355" text-anchor="start">Earth-2 HealDA</text>
-    <text x="928" y="1383" text-anchor="start">Spire AI-WX (20-day)</text>
-    <text x="928" y="1405" text-anchor="start">Spire AI-S2S (45-day)</text>
-    <text x="641" y="1436" text-anchor="end">DeepMind GraphCast</text>
-    <text x="769" y="1460">DeepMind GenCast</text>
-    <text x="949" y="1436">DeepMind FGN / WeatherNext 2</text>
-    <text x="1095" y="1436">WeatherNext 3</text>
-    <text x="821" y="1493" text-anchor="end">ECMWF AIFS</text>
-    <text x="961" y="1493">AIFS-ENS operational</text>
-    <text x="1057" y="1468">AIFS-ENS v2</text>
-    <text x="738" y="1526" text-anchor="start">Microsoft Aurora (→ Nature ’25)</text>
-    <text x="1075" y="1526" text-anchor="end">Microsoft Aurora 1.5</text>
-    <text x="715" y="1554" text-anchor="start">Cambridge Aardvark (→ Nature ’25)</text>
-    <text x="917" y="1589" text-anchor="end">Jua EPT-2 (&#8592; EPT-1.5)</text>
-    <text x="977" y="1589" text-anchor="start">EPT-2e (perturbation ensemble)</text>
+    <text x="553" y="1343">NVIDIA FourCastNet</text>
+    <text x="739" y="1343">NVIDIA CorrDiff</text>
+    <text x="791" y="1367" text-anchor="end">NVIDIA Earth-2 platform</text>
+    <text x="968" y="1343" text-anchor="start">NVIDIA FourCastNet 3</text>
+    <text x="1031" y="1379" text-anchor="start">Earth-2 Atlas (15-day)</text>
+    <text x="1031" y="1401" text-anchor="start">Earth-2 Stormscope</text>
+    <text x="1031" y="1423" text-anchor="start">Earth-2 HealDA</text>
+    <text x="928" y="1451" text-anchor="start">Spire AI-WX (20-day)</text>
+    <text x="928" y="1473" text-anchor="start">Spire AI-S2S (45-day)</text>
+    <text x="641" y="1504" text-anchor="end">DeepMind GraphCast</text>
+    <text x="769" y="1528">DeepMind GenCast</text>
+    <text x="949" y="1504">DeepMind FGN / WeatherNext 2</text>
+    <text x="1095" y="1504">WeatherNext 3</text>
+    <text x="821" y="1561" text-anchor="end">ECMWF AIFS</text>
+    <text x="961" y="1561">AIFS-ENS operational</text>
+    <text x="1057" y="1536">AIFS-ENS v2</text>
+    <text x="1095" y="1561">ECMWF HourGlass</text>
+    <text x="1068" y="1446" text-anchor="start">CMA 3 km CorrDiff</text>
+    <text x="738" y="1594" text-anchor="start">Microsoft Aurora (→ Nature ’25)</text>
+    <text x="1075" y="1594" text-anchor="end">Microsoft Aurora 1.5</text>
+    <text x="715" y="1622" text-anchor="start">Cambridge Aardvark (→ Nature ’25)</text>
+    <text x="917" y="1657" text-anchor="end">Jua EPT-2 (&#8592; EPT-1.5)</text>
+    <text x="977" y="1657" text-anchor="start">EPT-2e (perturbation ensemble)</text>
   </g>
 
-  <circle cx="1023" cy="1351" r="4.5" fill="#ffffff" stroke="#0f766e" stroke-width="2"/>
-  <path d="M799,1290 L860,1372 L876,1388" fill="none" stroke="#0f766e" stroke-width="1.4" stroke-dasharray="4,4"/>
-  <text x="910" y="1417" text-anchor="end" font-size="9.5" font-style="italic" fill="#0f766e">Spire — with reference to Earth-2 (dashed), not a fine-tune</text>
+  <circle cx="1023" cy="1419" r="4.5" fill="#ffffff" stroke="#0f766e" stroke-width="2"/>
+  <path d="M799,1358 L860,1440 L876,1456" fill="none" stroke="#0f766e" stroke-width="1.4" stroke-dasharray="4,4"/>
+  <path d="M799,1358 L1060,1442" fill="none" stroke="#0f766e" stroke-width="1.4" stroke-dasharray="4,4"/>
+  <text x="910" y="1485" text-anchor="end" font-size="9.5" font-style="italic" fill="#0f766e">Spire — with reference to Earth-2 (dashed), not a fine-tune</text>
 
 
   <!-- Band 4: Molecular / biochemistry -->
-  <rect x="15" y="1863" width="1150" height="246" fill="#4338ca" opacity="0.05"/>
-  <text x="24" y="1879" font-size="12.5" font-weight="bold" fill="#4338ca">Molecular / biochemistry models (architecturally heterogeneous — see notes)</text>
-  <text x="24" y="1919" font-size="10" font-style="italic" fill="#4338ca">structure prediction / co-folding</text>
-  <text x="24" y="2027" font-size="10" font-style="italic" fill="#4338ca">generative sequence &amp; backbone design</text>
-  <text x="24" y="2091" font-size="10" font-style="italic" fill="#4338ca">phenotype / perturbation (virtual cell)</text>
+  <rect x="15" y="1931" width="1150" height="246" fill="#4338ca" opacity="0.05"/>
+  <text x="24" y="1947" font-size="12.5" font-weight="bold" fill="#4338ca">Molecular / biochemistry models (architecturally heterogeneous — see notes)</text>
+  <text x="24" y="1987" font-size="10" font-style="italic" fill="#4338ca">structure prediction / co-folding</text>
+  <text x="24" y="2095" font-size="10" font-style="italic" fill="#4338ca">generative sequence &amp; backbone design</text>
+  <text x="24" y="2159" font-size="10" font-style="italic" fill="#4338ca">phenotype / perturbation (virtual cell)</text>
   <g stroke="#4338ca" stroke-width="1.6" fill="none">
-    <line x1="475" y1="1911" x2="819" y2="1911"/><line x1="819" y1="1911" x2="1027" y2="1911"/>
-    <line x1="819" y1="1911" x2="879" y2="1947"/><line x1="879" y1="1947" x2="949" y2="1947"/>
-    <line x1="819" y1="1911" x2="995" y2="1929"/>
-    <line x1="819" y1="1911" x2="859" y2="1983"/><line x1="859" y1="1983" x2="949" y2="1983"/><line x1="949" y1="1983" x2="1069" y2="1983"/>
-    <line x1="655" y1="2019" x2="931" y2="2019"/>
-    <line x1="829" y1="2051" x2="1069" y2="2051"/>
+    <line x1="475" y1="1979" x2="819" y2="1979"/><line x1="819" y1="1979" x2="1027" y2="1979"/>
+    <line x1="819" y1="1979" x2="879" y2="2015"/><line x1="879" y1="2015" x2="949" y2="2015"/>
+    <line x1="819" y1="1979" x2="995" y2="1997"/>
+    <line x1="819" y1="1979" x2="859" y2="2051"/><line x1="859" y1="2051" x2="949" y2="2051"/><line x1="949" y1="2051" x2="1069" y2="2051"/>
+    <line x1="655" y1="2087" x2="931" y2="2087"/>
+    <line x1="829" y1="2119" x2="1069" y2="2119"/>
   </g>
   <g fill="#4338ca">
-    <circle cx="475" cy="1911" r="4.5"/><circle cx="819" cy="1911" r="4.5"/><circle cx="1027" cy="1911" r="4.5"/>
-    <circle cx="995" cy="1929" r="4.5"/><circle cx="910" cy="2067" r="4.5"/>
-    <circle cx="879" cy="1947" r="4.5"/><circle cx="949" cy="1947" r="4.5"/>
-    <circle cx="859" cy="1983" r="4.5"/><circle cx="949" cy="1983" r="4.5"/><circle cx="1069" cy="1983" r="4.5"/>
-    <circle cx="655" cy="2019" r="4.5"/><circle cx="931" cy="2019" r="4.5"/>
-    <circle cx="719" cy="2051" r="4.5"/><circle cx="829" cy="2051" r="4.5"/><circle cx="1069" cy="2051" r="4.5"/>
-    <circle cx="799" cy="2083" r="4.5"/><circle cx="1039" cy="2083" r="4.5"/>
+    <circle cx="475" cy="1979" r="4.5"/><circle cx="819" cy="1979" r="4.5"/><circle cx="1027" cy="1979" r="4.5"/>
+    <circle cx="995" cy="1997" r="4.5"/><circle cx="910" cy="2135" r="4.5"/>
+    <circle cx="879" cy="2015" r="4.5"/><circle cx="949" cy="2015" r="4.5"/>
+    <circle cx="859" cy="2051" r="4.5"/><circle cx="949" cy="2051" r="4.5"/><circle cx="1069" cy="2051" r="4.5"/>
+    <circle cx="655" cy="2087" r="4.5"/><circle cx="931" cy="2087" r="4.5"/>
+    <circle cx="719" cy="2119" r="4.5"/><circle cx="829" cy="2119" r="4.5"/><circle cx="1069" cy="2119" r="4.5"/>
+    <circle cx="799" cy="2151" r="4.5"/><circle cx="1039" cy="2151" r="4.5"/>
   </g>
   <g font-size="10.5" fill="#333" text-anchor="middle">
-    <text x="475" y="1901">DeepMind AlphaFold2</text>
-    <text x="811" y="1901" text-anchor="end">DeepMind AlphaFold3</text>
-    <text x="1027" y="1901">Isomorphic IsoDDE</text>
-    <text x="995" y="1921" text-anchor="end" dx="-8">OpenFold3 (open)</text>
-    <text x="879" y="1963">MIT Boltz-1</text>
-    <text x="957" y="1941" text-anchor="start">MIT / Recursion Boltz-2</text>
-    <text x="851" y="1987" text-anchor="end">Chai-1 (open)</text>
-    <text x="949" y="1973">Chai Discovery Chai-2</text>
-    <text x="1077" y="1987" text-anchor="start">Chai-3</text>
-    <text x="655" y="2009">Profluent ProGen2</text>
-    <text x="931" y="2009">Profluent ProGen3</text>
-    <text x="719" y="2071">Generate:Bio Chroma</text>
-    <text x="829" y="2041">EvolutionaryScale ESM3</text>
-    <text x="1069" y="2041">CZ Biohub ESMFold2 / ESM C</text>
-    <text x="910" y="2081">Arc / NVIDIA Evo 2</text>
-    <text x="799" y="2101">Recursion Phenom</text>
-    <text x="1039" y="2101">Xaira X-Cell</text>
+    <text x="475" y="1969">DeepMind AlphaFold2</text>
+    <text x="811" y="1969" text-anchor="end">DeepMind AlphaFold3</text>
+    <text x="1027" y="1969">Isomorphic IsoDDE</text>
+    <text x="995" y="1989" text-anchor="end" dx="-8">OpenFold3 (open)</text>
+    <text x="879" y="2031">MIT Boltz-1</text>
+    <text x="957" y="2009" text-anchor="start">MIT / Recursion Boltz-2</text>
+    <text x="851" y="2055" text-anchor="end">Chai-1 (open)</text>
+    <text x="949" y="2041">Chai Discovery Chai-2</text>
+    <text x="1077" y="2055" text-anchor="start">Chai-3</text>
+    <text x="655" y="2077">Profluent ProGen2</text>
+    <text x="931" y="2077">Profluent ProGen3</text>
+    <text x="719" y="2139">Generate:Bio Chroma</text>
+    <text x="829" y="2109">EvolutionaryScale ESM3</text>
+    <text x="1069" y="2109">CZ Biohub ESMFold2 / ESM C</text>
+    <text x="910" y="2149">Arc / NVIDIA Evo 2</text>
+    <text x="799" y="2169">Recursion Phenom</text>
+    <text x="1039" y="2169">Xaira X-Cell</text>
   </g>
 
   <!-- Band 5: Nuclear physics -->
-  <rect x="15" y="1603" width="1150" height="254" fill="#b45309" opacity="0.06"/>
-  <text x="24" y="1619" font-size="12.5" font-weight="bold" fill="#b45309">Nuclear physics — fusion plasma &amp; fission (architecturally heterogeneous — see notes)</text>
-  <text x="24" y="1643" font-size="10" font-style="italic" fill="#b45309">RL control policies (sim-trained → hardware)</text>
-  <text x="24" y="1715" font-size="10" font-style="italic" fill="#b45309">neural surrogates of physics codes</text>
-  <text x="24" y="1751" font-size="10" font-style="italic" fill="#b45309">plasma foundation models</text>
-  <text x="24" y="1787" font-size="10" font-style="italic" fill="#b45309">digital twins &amp; differentiable simulators (little/no learned dynamics)</text>
+  <rect x="15" y="1671" width="1150" height="254" fill="#b45309" opacity="0.06"/>
+  <text x="24" y="1687" font-size="12.5" font-weight="bold" fill="#b45309">Nuclear physics — fusion plasma &amp; fission (architecturally heterogeneous — see notes)</text>
+  <text x="24" y="1711" font-size="10" font-style="italic" fill="#b45309">RL control policies (sim-trained → hardware)</text>
+  <text x="24" y="1783" font-size="10" font-style="italic" fill="#b45309">neural surrogates of physics codes</text>
+  <text x="24" y="1819" font-size="10" font-style="italic" fill="#b45309">plasma foundation models</text>
+  <text x="24" y="1855" font-size="10" font-style="italic" fill="#b45309">digital twins &amp; differentiable simulators (little/no learned dynamics)</text>
   <g stroke="#b45309" stroke-width="1.6" fill="none">
-    <line x1="549" y1="1639" x2="715" y2="1639"/><line x1="715" y1="1639" x2="1020" y2="1639"/>
-    <line x1="789" y1="1675" x2="989" y2="1675"/>
-    <line x1="307" y1="1711" x2="759" y2="1711"/>
+    <line x1="549" y1="1707" x2="715" y2="1707"/><line x1="715" y1="1707" x2="1020" y2="1707"/>
+    <line x1="789" y1="1743" x2="989" y2="1743"/>
+    <line x1="789" y1="1743" x2="1115" y2="1815"/>
+    <line x1="307" y1="1779" x2="759" y2="1779"/>
   </g>
   <g fill="#b45309">
-    <circle cx="549" cy="1639" r="4.5"/><circle cx="715" cy="1639" r="4.5"/><circle cx="1020" cy="1639" r="4.5"/>
-    <circle cx="789" cy="1675" r="4.5"/><circle cx="989" cy="1675" r="4.5"/><circle cx="1075" cy="1675" r="4.5"/>
-    <circle cx="307" cy="1711" r="4.5"/><circle cx="759" cy="1711" r="4.5"/><circle cx="989" cy="1711" r="4.5"/><circle cx="1075" cy="1711" r="4.5"/>
-    <circle cx="979" cy="1747" r="4.5"/><circle cx="1029" cy="1747" r="4.5"/>
-    <circle cx="655" cy="1783" r="4.5"/><circle cx="727" cy="1783" r="4.5"/><circle cx="1025" cy="1783" r="4.5"/>
-    <circle cx="829" cy="1819" r="4.5"/><circle cx="989" cy="1819" r="4.5"/><circle cx="1017" cy="1819" r="4.5"/><circle cx="1063" cy="1819" r="4.5"/>
+    <circle cx="549" cy="1707" r="4.5"/><circle cx="715" cy="1707" r="4.5"/><circle cx="1020" cy="1707" r="4.5"/>
+    <circle cx="789" cy="1743" r="4.5"/><circle cx="989" cy="1743" r="4.5"/><circle cx="1075" cy="1743" r="4.5"/>
+    <circle cx="307" cy="1779" r="4.5"/><circle cx="759" cy="1779" r="4.5"/><circle cx="989" cy="1779" r="4.5"/><circle cx="1075" cy="1779" r="4.5"/>
+    <circle cx="979" cy="1815" r="4.5"/><circle cx="1029" cy="1815" r="4.5"/><circle cx="1115" cy="1815" r="4.5"/>
+    <circle cx="655" cy="1851" r="4.5"/><circle cx="727" cy="1851" r="4.5"/><circle cx="1025" cy="1851" r="4.5"/>
+    <circle cx="829" cy="1887" r="4.5"/><circle cx="989" cy="1887" r="4.5"/><circle cx="1017" cy="1887" r="4.5"/><circle cx="1063" cy="1887" r="4.5"/>
   </g>
   <g font-size="10.5" fill="#333" text-anchor="middle">
-    <text x="549" y="1629">DeepMind/EPFL TCV RL (Nature ’22)</text>
-    <text x="715" y="1655">DeepMind TCV practical RL</text>
-    <text x="1020" y="1629">DIII-D reconstruction-free RL</text>
-    <text x="789" y="1665">PPPL DIII-D tearing avoidance (Nature ’24)</text>
-    <text x="997" y="1665" text-anchor="start">MIT PSFC neural state-space + RL</text>
-    <text x="1160" y="1689" text-anchor="end">INL PUR-1 fission RL</text>
-    <text x="307" y="1701">QLKNN (QuaLiKiz surrogate)</text>
-    <text x="759" y="1701">UKAEA FNO plasma surrogate</text>
-    <text x="989" y="1737">GyroSwin</text>
-    <text x="1160" y="1701" text-anchor="end">Argonne SAM transformer closure</text>
-    <text x="972" y="1773" text-anchor="end">PPPL Diag2Diag</text>
-    <text x="1037" y="1773" text-anchor="start">UKAEA/IBM TokaMind</text>
-    <text x="649" y="1799" text-anchor="end">INL AGN-201 twin</text>
-    <text x="735" y="1773" text-anchor="start">DeepONet nuclear DT</text>
-    <text x="1025" y="1793">TerraPower/NVIDIA twin</text>
-    <text x="829" y="1809">DeepMind TORAX (differentiable, not ML)</text>
-    <text x="983" y="1835" text-anchor="end">GA DIII-D Omniverse twin</text>
-    <text x="1025" y="1813" text-anchor="start">CFS/Siemens/NVIDIA</text>
-    <text x="1069" y="1835" text-anchor="start">STELLAR-AI</text>
+    <text x="549" y="1697">DeepMind/EPFL TCV RL (Nature ’22)</text>
+    <text x="715" y="1723">DeepMind TCV practical RL</text>
+    <text x="1020" y="1697">DIII-D reconstruction-free RL</text>
+    <text x="789" y="1733">PPPL DIII-D tearing avoidance (Nature ’24)</text>
+    <text x="997" y="1733" text-anchor="start">MIT PSFC neural state-space + RL</text>
+    <text x="1160" y="1757" text-anchor="end">INL PUR-1 fission RL</text>
+    <text x="307" y="1769">QLKNN (QuaLiKiz surrogate)</text>
+    <text x="759" y="1769">UKAEA FNO plasma surrogate</text>
+    <text x="989" y="1805">GyroSwin</text>
+    <text x="1115" y="1805">PPPL IGNITE</text>
+    <text x="1160" y="1769" text-anchor="end">Argonne SAM transformer closure</text>
+    <text x="972" y="1841" text-anchor="end">PPPL Diag2Diag</text>
+    <text x="1037" y="1841" text-anchor="start">UKAEA/IBM TokaMind</text>
+    <text x="649" y="1867" text-anchor="end">INL AGN-201 twin</text>
+    <text x="735" y="1841" text-anchor="start">DeepONet nuclear DT</text>
+    <text x="1025" y="1861">TerraPower/NVIDIA twin</text>
+    <text x="829" y="1877">DeepMind TORAX (differentiable, not ML)</text>
+    <text x="983" y="1903" text-anchor="end">GA DIII-D Omniverse twin</text>
+    <text x="1025" y="1881" text-anchor="start">CFS/Siemens/NVIDIA</text>
+    <text x="1069" y="1903" text-anchor="start">STELLAR-AI</text>
   </g>
 
   <!-- Band 6: Electromechanical / physical chemistry -->
@@ -313,143 +323,152 @@
   <circle cx="1090" cy="346" r="4.5" fill="#ffffff" stroke="#0d9488" stroke-width="2"/>
 
   <!-- Band 7: Human / social behavioral -->
-  <rect x="15" y="2115" width="1150" height="360" fill="#9333ea" opacity="0.06"/>
-  <text x="24" y="2131" font-size="12.5" font-weight="bold" fill="#9333ea">Human / social behavioral systems</text>
-  <text x="24" y="2171" font-size="10" font-style="italic" fill="#9333ea">spatio-temporal GNNs (traffic, epidemics)</text>
-  <text x="24" y="2243" font-size="10" font-style="italic" fill="#9333ea">autoregressive event-stream models (true rollout)</text>
-  <text x="24" y="2299" font-size="10" font-style="italic" fill="#9333ea">hand-coded simulators + learned policies</text>
-  <text x="24" y="2335" font-size="10" font-style="italic" fill="#9333ea">one-shot forecasters</text>
-  <text x="24" y="2360" font-size="10" font-style="italic" fill="#9333ea">game-theoretic / strategic</text>
+  <rect x="15" y="2183" width="1150" height="360" fill="#9333ea" opacity="0.06"/>
+  <text x="24" y="2199" font-size="12.5" font-weight="bold" fill="#9333ea">Human / social behavioral systems</text>
+  <text x="24" y="2239" font-size="10" font-style="italic" fill="#9333ea">spatio-temporal GNNs (traffic, epidemics)</text>
+  <text x="24" y="2311" font-size="10" font-style="italic" fill="#9333ea">autoregressive event-stream models (true rollout)</text>
+  <text x="24" y="2367" font-size="10" font-style="italic" fill="#9333ea">hand-coded simulators + learned policies</text>
+  <text x="24" y="2403" font-size="10" font-style="italic" fill="#9333ea">one-shot forecasters</text>
+  <text x="24" y="2428" font-size="10" font-style="italic" fill="#9333ea">game-theoretic / strategic</text>
   <g stroke="#9333ea" stroke-width="1.6" fill="none">
-    <line x1="79" y1="2151" x2="199" y2="2151"/><line x1="199" y1="2151" x2="799" y2="2151"/>
-    <line x1="199" y1="2187" x2="307" y2="2187"/>
-    <line x1="163" y1="2223" x2="295" y2="2223"/><line x1="295" y1="2223" x2="805" y2="2223"/>
-    <line x1="805" y1="2259" x2="925" y2="2259"/>
-    <line x1="655" y1="2295" x2="799" y2="2295"/>
-    <line x1="58" y1="2379" x2="702" y2="2379"/>
-    <line x1="823" y1="2415" x2="986" y2="2415"/>
-    <line x1="905" y1="2451" x2="1013" y2="2451"/>
+    <line x1="79" y1="2219" x2="199" y2="2219"/><line x1="199" y1="2219" x2="799" y2="2219"/>
+    <line x1="199" y1="2255" x2="307" y2="2255"/>
+    <line x1="163" y1="2291" x2="295" y2="2291"/><line x1="295" y1="2291" x2="805" y2="2291"/>
+    <line x1="805" y1="2327" x2="925" y2="2327"/>
+    <line x1="655" y1="2363" x2="799" y2="2363"/>
+    <line x1="58" y1="2447" x2="702" y2="2447"/>
+    <line x1="823" y1="2483" x2="986" y2="2483"/>
+    <line x1="905" y1="2519" x2="1013" y2="2519"/>
   </g>
   <g fill="#9333ea">
-    <circle cx="79" cy="2151" r="4.5"/><circle cx="199" cy="2151" r="4.5"/><circle cx="799" cy="2151" r="4.5"/><circle cx="877" cy="2151" r="4.5"/>
-    <circle cx="199" cy="2187" r="4.5"/><circle cx="307" cy="2187" r="4.5"/><circle cx="925" cy="2187" r="4.5"/>
-    <circle cx="163" cy="2223" r="4.5"/><circle cx="295" cy="2223" r="4.5"/><circle cx="805" cy="2223" r="4.5"/>
-    <circle cx="805" cy="2259" r="4.5"/><circle cx="925" cy="2259" r="4.5"/><circle cx="1039" cy="2259" r="4.5"/>
-    <circle cx="655" cy="2295" r="4.5"/><circle cx="799" cy="2295" r="4.5"/><circle cx="895" cy="2295" r="4.5"/>
-    <circle cx="415" cy="2331" r="4.5"/><circle cx="571" cy="2331" r="4.5"/><circle cx="1051" cy="2331" r="4.5"/>
-    <circle cx="58" cy="2379" r="4.5"/><circle cx="702" cy="2379" r="4.5"/>
-    <circle cx="823" cy="2415" r="4.5"/><circle cx="986" cy="2415" r="4.5"/>
-    <circle cx="905" cy="2451" r="4.5"/><circle cx="1013" cy="2451" r="4.5"/>
+    <circle cx="79" cy="2219" r="4.5"/><circle cx="199" cy="2219" r="4.5"/><circle cx="799" cy="2219" r="4.5"/><circle cx="877" cy="2219" r="4.5"/>
+    <circle cx="199" cy="2255" r="4.5"/><circle cx="307" cy="2255" r="4.5"/><circle cx="925" cy="2255" r="4.5"/>
+    <circle cx="163" cy="2291" r="4.5"/><circle cx="295" cy="2291" r="4.5"/><circle cx="805" cy="2291" r="4.5"/>
+    <circle cx="805" cy="2327" r="4.5"/><circle cx="925" cy="2327" r="4.5"/><circle cx="1039" cy="2327" r="4.5"/>
+    <circle cx="655" cy="2363" r="4.5"/><circle cx="799" cy="2363" r="4.5"/><circle cx="895" cy="2363" r="4.5"/>
+    <circle cx="415" cy="2399" r="4.5"/><circle cx="571" cy="2399" r="4.5"/><circle cx="1051" cy="2399" r="4.5"/>
+    <circle cx="58" cy="2447" r="4.5"/><circle cx="702" cy="2447" r="4.5"/>
+    <circle cx="823" cy="2483" r="4.5"/><circle cx="986" cy="2483" r="4.5"/>
+    <circle cx="905" cy="2519" r="4.5"/><circle cx="1013" cy="2519" r="4.5"/>
   </g>
   <g font-size="10.5" fill="#333" text-anchor="middle">
-    <text x="79" y="2141">DCRNN</text>
-    <text x="199" y="2141">STGCN / Graph WaveNet</text>
-    <text x="799" y="2141">Tsinghua UniST</text>
-    <text x="885" y="2167" text-anchor="start">HKU UrbanGPT</text>
-    <text x="199" y="2203">Google COVID ST-GNN</text>
-    <text x="315" y="2203" text-anchor="start">MIT universal-ODE SEIR</text>
-    <text x="933" y="2203" text-anchor="start">world models for epidemiology (position paper)</text>
-    <text x="163" y="2213">Neural Hawkes</text>
-    <text x="295" y="2213">Transformer Hawkes</text>
-    <text x="805" y="2213">HYPRO (long-horizon rollout)</text>
-    <text x="797" y="2249" text-anchor="end">Foresight EHR</text>
-    <text x="960" y="2249" text-anchor="end">ETHOS trajectories</text>
-    <text x="1039" y="2249">Delphi-2M (Nature ’25)</text>
-    <text x="655" y="2285">Salesforce AI Economist</text>
-    <text x="799" y="2285">Stanford Generative Agents</text>
-    <text x="903" y="2285" text-anchor="start">AgentSociety / OASIS</text>
-    <text x="415" y="2321">ViEWS conflict forecasting</text>
-    <text x="571" y="2321">cascade popularity GNNs</text>
-    <text x="1051" y="2321">LLMs predict social-science effects (Nature ’26)</text>
-    <text x="66" y="2369" text-anchor="start">DeepMind PSRO (NIPS ’17)</text>
-    <text x="710" y="2375" text-anchor="start">Michigan Dyna-PSRO (co-learned world + empirical game)</text>
-    <text x="815" y="2405" text-anchor="end">Aalto Code World Models (GIF-MCTS)</text>
-    <text x="994" y="2411" text-anchor="start">DeepMind Code World Models</text>
-    <text x="994" y="2429" text-anchor="start">for General Game Playing</text>
-    <text x="897" y="2441" text-anchor="end">NL → extensive-form game (AAMAS ’25)</text>
-    <text x="1021" y="2447" text-anchor="start">DeepMind strategicwm</text>
+    <text x="79" y="2209">DCRNN</text>
+    <text x="199" y="2209">STGCN / Graph WaveNet</text>
+    <text x="799" y="2209">Tsinghua UniST</text>
+    <text x="885" y="2235" text-anchor="start">HKU UrbanGPT</text>
+    <text x="199" y="2271">Google COVID ST-GNN</text>
+    <text x="315" y="2271" text-anchor="start">MIT universal-ODE SEIR</text>
+    <text x="933" y="2271" text-anchor="start">world models for epidemiology (position paper)</text>
+    <text x="163" y="2281">Neural Hawkes</text>
+    <text x="295" y="2281">Transformer Hawkes</text>
+    <text x="805" y="2281">HYPRO (long-horizon rollout)</text>
+    <text x="797" y="2317" text-anchor="end">Foresight EHR</text>
+    <text x="960" y="2317" text-anchor="end">ETHOS trajectories</text>
+    <text x="1039" y="2317">Delphi-2M (Nature ’25)</text>
+    <text x="655" y="2353">Salesforce AI Economist</text>
+    <text x="799" y="2353">Stanford Generative Agents</text>
+    <text x="903" y="2353" text-anchor="start">AgentSociety / OASIS</text>
+    <text x="415" y="2389">ViEWS conflict forecasting</text>
+    <text x="571" y="2389">cascade popularity GNNs</text>
+    <text x="1051" y="2389">LLMs predict social-science effects (Nature ’26)</text>
+    <text x="66" y="2437" text-anchor="start">DeepMind PSRO (NIPS ’17)</text>
+    <text x="710" y="2443" text-anchor="start">Michigan Dyna-PSRO (co-learned world + empirical game)</text>
+    <text x="815" y="2473" text-anchor="end">Aalto Code World Models (GIF-MCTS)</text>
+    <text x="994" y="2479" text-anchor="start">DeepMind Code World Models</text>
+    <text x="994" y="2497" text-anchor="start">for General Game Playing</text>
+    <text x="897" y="2509" text-anchor="end">NL → extensive-form game (AAMAS ’25)</text>
+    <text x="1021" y="2515" text-anchor="start">DeepMind strategicwm</text>
   </g>
 
   <!-- Band 8: Generative video / interactive -->
   <g stroke="#db2777" stroke-width="1.6" fill="none">
-    <line x1="787" y1="1062" x2="889" y2="1062"/><line x1="889" y1="1062" x2="967" y2="1062"/><line x1="967" y1="1062" x2="1027" y2="1062"/>
-    <line x1="799" y1="1098" x2="997" y2="1098"/>
-    <line x1="967" y1="1062" x2="997" y2="1098"/>
-    <line x1="859" y1="1214" x2="997" y2="1214"/><line x1="997" y1="1214" x2="1095" y2="1214"/>
-    <line x1="940" y1="1144" x2="1050" y2="1180"/>
+    <line x1="787" y1="1090" x2="889" y2="1090"/><line x1="889" y1="1090" x2="967" y2="1090"/><line x1="967" y1="1090" x2="1027" y2="1090"/>
+    <line x1="799" y1="1126" x2="997" y2="1126"/>
+    <line x1="967" y1="1090" x2="997" y2="1126"/>
+    <line x1="859" y1="1242" x2="997" y2="1242"/><line x1="997" y1="1242" x2="1095" y2="1242"/>
+    <line x1="940" y1="1172" x2="1050" y2="1208"/>
+    <line x1="920" y1="1284" x2="1010" y2="1284"/>
+    <path d="M901,1208 L901,1268 L1075,1268 L1075,1284" fill="none"/>
   </g>
   <g fill="#db2777">
-    <circle cx="787" cy="1062" r="4.5"/><circle cx="889" cy="1062" r="4.5"/><circle cx="967" cy="1062" r="4.5"/><circle cx="1027" cy="1062" r="4.5"/>
-    <circle cx="799" cy="1098" r="4.5"/><circle cx="997" cy="1098" r="4.5"/>
-    <circle cx="787" cy="1144" r="4.5"/><circle cx="847" cy="1144" r="4.5"/><circle cx="997" cy="1144" r="4.5"/>
-    <circle cx="940" cy="1144" r="4.5"/><circle cx="1050" cy="1180" r="4.5"/>
-    <circle cx="817" cy="1180" r="4.5"/><circle cx="901" cy="1180" r="4.5"/>
-    <circle cx="859" cy="1214" r="4.5"/><circle cx="997" cy="1214" r="4.5"/><circle cx="1095" cy="1214" r="4.5"/>
+    <circle cx="787" cy="1090" r="4.5"/><circle cx="889" cy="1090" r="4.5"/><circle cx="967" cy="1090" r="4.5"/><circle cx="1027" cy="1090" r="4.5"/>
+    <circle cx="799" cy="1126" r="4.5"/><circle cx="997" cy="1126" r="4.5"/>
+    <circle cx="787" cy="1172" r="4.5"/><circle cx="847" cy="1172" r="4.5"/><circle cx="997" cy="1172" r="4.5"/>
+    <circle cx="940" cy="1172" r="4.5"/><circle cx="1050" cy="1208" r="4.5"/>
+    <circle cx="1090" cy="1090" r="4.5"/><circle cx="1108" cy="1090" r="4.5"/>
+    <circle cx="920" cy="1284" r="4.5"/><circle cx="1010" cy="1284" r="4.5"/><circle cx="1075" cy="1284" r="4.5"/>
+    <circle cx="817" cy="1208" r="4.5"/><circle cx="901" cy="1208" r="4.5"/>
+    <circle cx="859" cy="1242" r="4.5"/><circle cx="997" cy="1242" r="4.5"/><circle cx="1095" cy="1242" r="4.5"/>
   </g>
   <g font-size="10.5" fill="#333" text-anchor="middle">
-    <text x="787" y="1052" text-anchor="end">DeepMind Genie</text>
-    <text x="889" y="1052">DeepMind Genie 2</text>
-    <text x="975" y="1052" text-anchor="start">DeepMind Genie 3</text>
-    <text x="1027" y="1078">Waymo World Model</text>
-    <text x="740" y="1114" text-anchor="start">DeepMind SIMA (agent)</text>
-    <text x="997" y="1114">DeepMind SIMA 2 (in Genie 3 worlds)</text>
-    <text x="700" y="1135" text-anchor="start">OpenAI Sora (“world simulator”)</text>
-    <text x="847" y="1160">Google GameNGen</text>
-    <text x="1005" y="1135" text-anchor="start">MBZUAI PAN / GLP</text>
-    <text x="940" y="1135">ByteDance BAGEL</text>
-    <text x="1045" y="1198">Physical Intelligence π0.7</text>
-    <text x="817" y="1196">U. Geneva DIAMOND</text>
-    <text x="909" y="1184" text-anchor="start">NVIDIA Cosmos</text>
-    <text x="540" y="1218" text-anchor="start" font-style="italic" fill="#db2777">spatial / 3D-native (persistent geometry):</text>
-    <text x="851" y="1230" text-anchor="end">World Labs LWM (founded)</text>
-    <text x="997" y="1230">Marble (’25 → GA ’26)</text>
-    <text x="1095" y="1230">Atlas (Sept ’26)</text>
+    <text x="787" y="1080" text-anchor="end">DeepMind Genie</text>
+    <text x="889" y="1080">DeepMind Genie 2</text>
+    <text x="975" y="1080" text-anchor="start">DeepMind Genie 3</text>
+    <text x="1027" y="1106">Waymo World Model</text>
+    <text x="740" y="1142" text-anchor="start">DeepMind SIMA (agent)</text>
+    <text x="997" y="1142">DeepMind SIMA 2 (in Genie 3 worlds)</text>
+    <text x="700" y="1163" text-anchor="start">OpenAI Sora (“world simulator”)</text>
+    <text x="847" y="1188">Google GameNGen</text>
+    <text x="1005" y="1163" text-anchor="start">MBZUAI PAN / GLP</text>
+    <text x="940" y="1163">ByteDance BAGEL</text>
+    <text x="1075" y="1080" text-anchor="start">Odyssey-3</text>
+    <text x="1092" y="1106" text-anchor="start">Praxis-1</text>
+    <text x="920" y="1300">Wayve GAIA-2</text>
+    <text x="1010" y="1300">GAIA-3</text>
+    <text x="1075" y="1300">Cosmos 3</text>
+    <text x="1045" y="1226">Physical Intelligence π0.7</text>
+    <text x="817" y="1224">U. Geneva DIAMOND</text>
+    <text x="909" y="1212" text-anchor="start">NVIDIA Cosmos</text>
+    <text x="540" y="1246" text-anchor="start" font-style="italic" fill="#db2777">spatial / 3D-native (persistent geometry):</text>
+    <text x="851" y="1258" text-anchor="end">World Labs LWM (founded)</text>
+    <text x="997" y="1258">Marble (’25 → GA ’26)</text>
+    <text x="1095" y="1258">Atlas (Sept ’26)</text>
   </g>
 
   <!-- Band 5: Decoder-free latent + MPC -->
   <g stroke="#0284c7" stroke-width="1.6" fill="none">
-    <line x1="559" y1="796" x2="751" y2="796"/><line x1="751" y1="796" x2="823" y2="796"/>
-    <line x1="751" y1="796" x2="1003" y2="822"/>
+    <line x1="559" y1="824" x2="751" y2="824"/><line x1="751" y1="824" x2="823" y2="824"/>
+    <line x1="751" y1="824" x2="1003" y2="850"/>
   </g>
   <g fill="#0284c7">
-    <circle cx="559" cy="796" r="4.5"/><circle cx="751" cy="796" r="4.5"/><circle cx="823" cy="796" r="4.5"/><circle cx="1003" cy="822" r="4.5"/>
+    <circle cx="559" cy="824" r="4.5"/><circle cx="751" cy="824" r="4.5"/><circle cx="823" cy="824" r="4.5"/><circle cx="1003" cy="850" r="4.5"/>
   </g>
   <g font-size="10.5" fill="#333" text-anchor="middle">
-    <text x="559" y="786">UCSD TD-MPC</text>
-    <text x="751" y="786">UCSD TD-MPC2</text>
-    <text x="831" y="786" text-anchor="start">UCSD Puppeteer</text>
-    <text x="1003" y="838">UCSD Newt (ICLR ’26)</text>
+    <text x="559" y="814">UCSD TD-MPC</text>
+    <text x="751" y="814">UCSD TD-MPC2</text>
+    <text x="831" y="814" text-anchor="start">UCSD Puppeteer</text>
+    <text x="1003" y="866">UCSD Newt (ICLR ’26)</text>
   </g>
 
   <!-- Band 6: MuZero -->
   <g stroke="#dc2626" stroke-width="1.6" fill="none">
-    <line x1="277" y1="888" x2="511" y2="888"/><line x1="511" y1="888" x2="799" y2="888"/>
-    <line x1="277" y1="888" x2="829" y2="908"/>
+    <line x1="277" y1="916" x2="511" y2="916"/><line x1="511" y1="916" x2="799" y2="916"/>
+    <line x1="277" y1="916" x2="829" y2="936"/>
   </g>
   <g fill="#dc2626">
-    <circle cx="277" cy="888" r="4.5"/><circle cx="511" cy="888" r="4.5"/><circle cx="799" cy="888" r="4.5"/><circle cx="829" cy="908" r="4.5"/>
+    <circle cx="277" cy="916" r="4.5"/><circle cx="511" cy="916" r="4.5"/><circle cx="799" cy="916" r="4.5"/><circle cx="829" cy="936" r="4.5"/>
   </g>
   <g font-size="10.5" fill="#333" text-anchor="middle">
-    <text x="277" y="878">DeepMind MuZero</text>
-    <text x="511" y="878">Tsinghua EfficientZero</text>
-    <text x="799" y="878">Tsinghua EfficientZero V2</text>
-    <text x="837" y="920" text-anchor="start">Shanghai AI Lab UniZero</text>
+    <text x="277" y="906">DeepMind MuZero</text>
+    <text x="511" y="906">Tsinghua EfficientZero</text>
+    <text x="799" y="906">Tsinghua EfficientZero V2</text>
+    <text x="837" y="948" text-anchor="start">Shanghai AI Lab UniZero</text>
   </g>
 
   <!-- Band 7: Token / transformer -->
   <g stroke="#d97706" stroke-width="1.6" fill="none">
-    <line x1="619" y1="974" x2="751" y2="974"/><line x1="751" y1="974" x2="919" y2="974"/>
-    <line x1="751" y1="974" x2="907" y2="994"/>
+    <line x1="619" y1="1002" x2="751" y2="1002"/><line x1="751" y1="1002" x2="919" y2="1002"/>
+    <line x1="751" y1="1002" x2="907" y2="1022"/>
   </g>
   <g fill="#d97706">
-    <circle cx="619" cy="974" r="4.5"/><circle cx="751" cy="974" r="4.5"/><circle cx="919" cy="974" r="4.5"/><circle cx="907" cy="994" r="4.5"/>
+    <circle cx="619" cy="1002" r="4.5"/><circle cx="751" cy="1002" r="4.5"/><circle cx="919" cy="1002" r="4.5"/><circle cx="907" cy="1022" r="4.5"/>
   </g>
   <g font-size="10.5" fill="#333" text-anchor="middle">
-    <text x="619" y="964">U. Geneva IRIS</text>
-    <text x="751" y="964">Tsinghua STORM</text>
-    <text x="919" y="964">U. Würzburg TWISTER</text>
-    <text x="915" y="998" text-anchor="start">DeepMind Craftax TWM</text>
+    <text x="619" y="992">U. Geneva IRIS</text>
+    <text x="751" y="992">Tsinghua STORM</text>
+    <text x="919" y="992">U. Würzburg TWISTER</text>
+    <text x="915" y="1026" text-anchor="start">DeepMind Craftax TWM</text>
   </g>
 
-  <text x="590" y="2515" text-anchor="middle" font-size="10.5" fill="#777" font-style="italic">Horizontal position = first public release (arXiv preprint or announcement). Lines indicate architectural descent; time flows left → right.</text>
+  <text x="590" y="2583" text-anchor="middle" font-size="10.5" fill="#777" font-style="italic">Horizontal position = first public release (arXiv preprint or announcement). Lines indicate architectural descent; time flows left → right.</text>
 </svg>
