@@ -382,7 +382,8 @@
 
   <!-- Band 8: Generative video / interactive -->
   <g stroke="#db2777" stroke-width="1.6" fill="none">
-    <line x1="787" y1="1090" x2="889" y2="1090"/><line x1="889" y1="1090" x2="967" y2="1090"/><line x1="967" y1="1090" x2="1027" y2="1090"/>
+    <line x1="787" y1="1090" x2="889" y2="1090"/><line x1="889" y1="1090" x2="967" y2="1090"/><line x1="967" y1="1090" x2="1112" y2="1090"/>
+    <line x1="967" y1="1090" x2="1027" y2="1108"/>
     <line x1="799" y1="1126" x2="997" y2="1126"/>
     <line x1="967" y1="1090" x2="997" y2="1126"/>
     <line x1="859" y1="1242" x2="997" y2="1242"/><line x1="997" y1="1242" x2="1095" y2="1242"/>
@@ -391,11 +392,11 @@
     <path d="M901,1208 L901,1268 L1075,1268 L1075,1284" fill="none"/>
   </g>
   <g fill="#db2777">
-    <circle cx="787" cy="1090" r="4.5"/><circle cx="889" cy="1090" r="4.5"/><circle cx="967" cy="1090" r="4.5"/><circle cx="1027" cy="1090" r="4.5"/>
+    <circle cx="787" cy="1090" r="4.5"/><circle cx="889" cy="1090" r="4.5"/><circle cx="967" cy="1090" r="4.5"/><circle cx="1027" cy="1108" r="4.5"/>
     <circle cx="799" cy="1126" r="4.5"/><circle cx="997" cy="1126" r="4.5"/>
     <circle cx="787" cy="1172" r="4.5"/><circle cx="847" cy="1172" r="4.5"/><circle cx="997" cy="1172" r="4.5"/>
     <circle cx="940" cy="1172" r="4.5"/><circle cx="1050" cy="1208" r="4.5"/>
-    <circle cx="1090" cy="1090" r="4.5"/><circle cx="1108" cy="1090" r="4.5"/>
+    <circle cx="1090" cy="1056" r="4.5"/><circle cx="1108" cy="1056" r="4.5"/><circle cx="1112" cy="1090" r="4.5"/>
     <circle cx="920" cy="1284" r="4.5"/><circle cx="1010" cy="1284" r="4.5"/><circle cx="1075" cy="1284" r="4.5"/>
     <circle cx="817" cy="1208" r="4.5"/><circle cx="901" cy="1208" r="4.5"/>
     <circle cx="859" cy="1242" r="4.5"/><circle cx="997" cy="1242" r="4.5"/><circle cx="1095" cy="1242" r="4.5"/>
@@ -404,15 +405,16 @@
     <text x="787" y="1080" text-anchor="end">DeepMind Genie</text>
     <text x="889" y="1080">DeepMind Genie 2</text>
     <text x="975" y="1080" text-anchor="start">DeepMind Genie 3</text>
-    <text x="1027" y="1106">Waymo World Model</text>
+    <text x="1112" y="1080">Genie 4</text>
+    <text x="1035" y="1112" text-anchor="start">Waymo World Model</text>
     <text x="740" y="1142" text-anchor="start">DeepMind SIMA (agent)</text>
     <text x="997" y="1142">DeepMind SIMA 2 (in Genie 3 worlds)</text>
     <text x="700" y="1163" text-anchor="start">OpenAI Sora (“world simulator”)</text>
     <text x="847" y="1188">Google GameNGen</text>
     <text x="1005" y="1163" text-anchor="start">MBZUAI PAN / GLP</text>
     <text x="940" y="1163">ByteDance BAGEL</text>
-    <text x="1075" y="1080" text-anchor="start">Odyssey-3</text>
-    <text x="1092" y="1106" text-anchor="start">Praxis-1</text>
+    <text x="1083" y="1060" text-anchor="end">Odyssey-3</text>
+    <text x="1115" y="1060" text-anchor="start">Praxis-1</text>
     <text x="920" y="1300">Wayve GAIA-2</text>
     <text x="1010" y="1300">GAIA-3</text>
     <text x="1075" y="1300">Cosmos 3</text>
