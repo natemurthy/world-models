@@ -1,7 +1,7 @@
 # World Model Architectures: A Survey (2018–2026)
 
 Author: Nathan Murthy
-Last Edit: 28 Oct 2026
+Last Edit: 30 Oct 2026
 
 Whereas large language models (LLMs) have dominated the narrative on Artificial Intelligence (AI) over the last four years and even reversed popular perception of AI, from ridicule (in some technical and academic circles) to vogue, the ubiquity and availability of these models today have exposed their nearly universally well-understood limitations. At a fundamental level, AI models based solely on LLMs have no real capabilities to reason about anything outside the structure of language. AI research has accelerated to investigate, create, and evaluate models that learn the structure of phenomena in the world, to build machines and agentic systems that can reason about the world beyond what language alone can offer. It is generally regarded in many leading research, engineering, and venture capital communities that **world models are the next burgeoning frontier of AI** [[Herweijer 2026](#ref-herweijer-2026)].
 
